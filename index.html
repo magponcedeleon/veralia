@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veralia | Quantitative Neuroimaging Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .clinical-shadow { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }
+        .sidebar-border { border-left: 1px solid #e2e8f0; }
+        .bg-medical-dark { background-color: #0f172a; }
+        .video-container:hover .expand-btn { opacity: 1; }
+        
+        /* Fixes the "Covered Title" issue when clicking nav links */
+        section { scroll-margin-top: 5rem; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+   <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 h-16">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <img src="assets/images/icon.png" alt="Veralia Logo" class="h-8 w-8 object-contain brightness-125">
+            <span class="text-xl font-extrabold tracking-tighter text-white uppercase">VERALIA</span>
+        </div>
+        <div class="hidden md:flex gap-10 text-[12px] font-bold uppercase tracking-[0.2em] text-white">
+            <a href="#technology" class="hover:text-blue-400 transition">Core Technology</a>
+            <a href="#analysis" class="hover:text-blue-400 transition">Clinical Analysis</a>
+            <a href="#research" class="hover:text-blue-400 transition">Research</a>
+        </div>
+        <button onclick="toggleModal()" class="bg-blue-600 text-white px-6 py-2 text-[12px] font-bold uppercase tracking-widest hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
+            Book Consultation
+        </button>
+    </div>
+</nav>
+
+<header class="pt-32 pb-24 border-b border-slate-100 bg-white">
+    <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-5 gap-12 items-center">
+        
+        <div class="lg:col-span-2">
+            <h1 class="text-5xl font-extrabold leading-tight text-slate-900 mb-6 tracking-tight">
+                Designed for Clinicians
+            </h1>
+            
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                Standardize cerebral PET quantification with Veralia. Our engine executes complex processing in the background, delivering validated metrics for every case to support an objective diagnosis.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button onclick="toggleModal()" class="bg-blue-600 text-white px-10 py-4 text-xs font-black uppercase tracking-[0.2em] hover:bg-blue-700 transition shadow-xl shadow-blue-200">
+                    Request Clinical Briefing
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-slate-100 to-blue-50 rounded-[2.5rem] -z-10 blur-2xl opacity-60"></div>
+            <div class="relative bg-slate-950 rounded-2xl p-1.5 shadow-2xl border border-slate-200 video-container group">
+                <div class="w-full h-full rounded-xl overflow-hidden bg-black flex items-center justify-center relative">
+                    <video id="heroVideo" class="w-full aspect-video object-cover display-block" autoplay muted loop playsinline disablePictureInPicture controlsList="nodownload noplaybackrate">
+                        <source src="assets/videos/SoftwareOverview.mp4" type="video/mp4">
+                    </video>
+                    <button onclick="toggleFullScreen()" class="expand-btn absolute bottom-4 right-4 bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-2 rounded-lg opacity-0 transition-opacity duration-300 hover:bg-white/20 flex items-center gap-2">
+                        <span class="text-[9px] font-bold tracking-widest uppercase">Expand View</span>
+                        <i class="fa-solid fa-expand text-xs"></i>
+                    </button>
+                </div>
+                <div class="px-5 py-3 bg-slate-900 flex justify-between items-center rounded-b-xl border-t border-slate-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
+                        <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Interface Overview</span>
+                    </div>
+                    <span class="text-[9px] font-bold text-blue-400/80 uppercase tracking-tighter italic">Veralia Clinical v1.1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <section id="technology" class="py-24 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid lg:grid-cols-3 gap-16">
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-blue-600"></div>
+                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Clinical Standard</h4>
+                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Eliminate Inter-Observer Variability.</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        Veralia provides a standardized framework for PET quantification, ensuring that metrics remain consistent regardless of the reading physician.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-blue-600"></div>
+                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Advanced Analytics</h4>
+                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Validated Normative Comparisons.</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        By benchmarking individual patient volumes against healthy databases, clinicians can identify statistically significant deviations.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-blue-600"></div>
+                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Workflow Optimization</h4>
+                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Automated Processing Pipeline.</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">
+                        From DICOM uploading to metrics generation, Veralia automates technical processing for the clinical team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analysis" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="mb-16">
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.3em] mb-4 italic">Benchmarking & Norms</h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight uppercase">Evidence-Based Comparative Analysis</h3>
+                <p class="text-slate-600 leading-relaxed italic max-w-2xl">Identify metabolic deviations from age-matched healthy controls. Veralia provides objective statistical context.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
+                <div class="space-y-6">
+                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 italic text-slate-500 text-xs leading-relaxed">
+                        <span class="text-blue-600 font-bold block mb-1 uppercase tracking-widest text-[9px] non-italic">
+                            <i class="fa-solid fa-circle-info mr-2"></i>Clinical Alert:
+                        </span>
+                        Significant metabolic hypometabolism detected in the <strong>Left Temporal Lobe</strong>.
+                    </div>
+                    <div class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-sm">
+                        <table class="w-full text-left text-[13px] border-collapse">
+                            <thead class="bg-slate-50 border-b border-slate-100 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                                <tr>
+                                    <th class="px-6 py-4">Anatomical Region</th>
+                                    <th class="px-6 py-4 text-blue-600">SUV</th>
+                                    <th class="px-6 py-5">Deviation To Normal</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-slate-600 font-medium">
+                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Frontal Lobe (L)</td><td class="px-6 py-4 font-mono text-blue-600">0.85</td><td class="px-6 py-4 text-xs italic"><span class="text-red-500 font-semibold">-3.4 (Significant)</span></td></tr>
+                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Frontal Lobe (R)</td><td class="px-6 py-4 font-mono text-blue-600">1.12</td><td class="px-6 py-4 text-xs italic"><span class="text-slate-400">0.4 (Normal)</span></td></tr>
+                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Temporal Lobe (L)</td><td class="px-6 py-4 font-mono text-blue-600">0.62</td><td class="px-6 py-4 text-xs italic"><span class="text-slate-400">-1.2 (Normal)</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-[2.5rem] p-10 text-white flex flex-col justify-center min-h-[400px] shadow-2xl">
+                    <h4 class="text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6 italic">Quantification Engine</h4>
+                    <p class="text-xl font-light leading-relaxed mb-8">
+                        "Veralia provides the <span class="text-white font-semibold">objective baseline</span> required to differentiate between normal age-related decline and pathology."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="py-24 bg-medical-dark text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xs font-bold text-blue-400 uppercase tracking-[0.3em] mb-4">Cohort Analytics</h2>
+                    <h3 class="text-4xl font-extrabold tracking-tight uppercase leading-tight">Advanced Research & Academic Support</h3>
+                </div>
+                <p class="text-slate-400 leading-relaxed italic max-w-lg">Veralia transcends individual diagnostics. Perform voxel-wise group comparisons and longitudinal trajectory modeling.</p>
+
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-10 bg-blue-500/5 blur-3xl rounded-full"></div>
+                <div class="relative bg-slate-900 p-8 rounded-[2.5rem] border border-slate-800 shadow-2xl">
+                    <div class="flex justify-between items-start mb-10">
+                        <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">Statistical Significance</span>
+                        <div class="flex gap-4">
+                            <span class="text-[8px] text-slate-400 font-bold uppercase"><i class="fa-solid fa-circle text-slate-600 mr-1"></i>Placebo</span>
+                            <span class="text-[8px] text-slate-400 font-bold uppercase"><i class="fa-solid fa-circle text-blue-500 mr-1"></i>Treatment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="relative h-56 w-full border-b border-slate-800 flex items-end px-4">
+<svg class="w-full h-full" viewBox="0 0 200 100" preserveAspectRatio="none">
+    <path d="M 40 100 Q 80 10 120 100" fill="rgba(71, 85, 105, 0.2)" stroke="#475569" stroke-width="1.5" />
+    
+    <path d="M 80 100 Q 120 10 160 100" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="2" />
+    
+    <path d="M 80 50 L 80 40 L 120 40 L 120 50" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2" />
+    
+    <text x="100" y="35" fill="#ef4444" font-size="6" font-weight="bold" text-anchor="middle" font-family="Inter, sans-serif">P < 0.001</text>
+</svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col items-center">
+            <span class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-10">Institutional Support</span>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-500">
+                    <img src="assets/images/INiTS_Logo.avif" alt="INiTS Logo" class="h-20 w-auto object-contain">
+            </div>
+        </div>
+    </section>
+
+
+    <div id="contactModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onclick="toggleModal()"></div>
+        <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100 animate-in fade-in zoom-in duration-300">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 tracking-tight">Clinical Consultation</h3>
+                    <p class="text-[10px] text-blue-600 uppercase font-black tracking-widest mt-1 italic">Veralia Technical Briefing</p>
+                </div>
+                <button onclick="toggleModal()" class="text-slate-400 hover:text-slate-900 transition p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <form action="#" class="p-8 space-y-5" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Full Name</label>
+                        <input type="text" name="name" required placeholder="Dr. Smith" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Institution</label>
+                        <input type="text" name="institution" required placeholder="Medical Center" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Professional Email Address</label>
+                    <input type="email" name="email" required placeholder="name@hospital.org" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Additional Message</label>
+                    <textarea name="message" rows="3" placeholder="How can Veralia support your workflow?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-black uppercase text-[11px] tracking-[0.2em] py-5 rounded-xl hover:bg-blue-700 transition shadow-xl shadow-blue-200">
+                    Confirm Meeting Request
+                </button>
+                <p class="text-[9px] text-center text-slate-400 uppercase tracking-tighter">
+                    By clicking, your mail client will open to finalize the request.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-20 border-t border-slate-100 bg-medical-dark text-white">
+        <div class="max-w-7xl mx-auto px-8 text-center space-y-6">
+            <p class="text-[10px] text-slate-400 max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.15em] font-medium">
+                VERALIA IS INTENDED FOR RESEARCH AND INTERNAL EVALUATION PURPOSES. IT IS NOT MEDICALLY CERTIFIED FOR PRIMARY DIAGNOSIS. ALL FINDINGS MUST BE REVIEWED BY A BOARD-CERTIFIED NUCLEAR MEDICINE PHYSICIAN.
+            </p>
+            <div class="text-[10px] font-black tracking-[0.4em] uppercase text-slate-300">
+    &copy; 2026 VERALIA NEUROIMAGING &bull; AUSTRIA
+</div>
+        </div>
+    </footer>
+
+<script>
+    function toggleFullScreen() {
+        const video = document.getElementById("heroVideo");
+        if (video.requestFullscreen) { video.requestFullscreen(); } 
+        else if (video.webkitRequestFullscreen) { video.webkitRequestFullscreen(); } 
+        else if (video.msRequestFullscreen) { video.msRequestFullscreen(); }
+    }
+
+    function toggleModal() {
+        const modal = document.getElementById('contactModal');
+        if (modal) {
+            modal.classList.toggle('hidden');
+            modal.classList.toggle('flex');
+            document.body.style.overflow = modal.classList.contains('hidden') ? 'auto' : 'hidden';
+        }
+    }
+
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+        const myEmail = "poncedeleon.magdalena.s@gmail.com"; 
+        
+        const subject = encodeURIComponent("Veralia Clinical Consultation Request - " + data.institution);
+        const body = encodeURIComponent(
+            "Hello Veralia Team,\n\n" +
+            "I would like to request a clinical briefing regarding the Veralia platform.\n\n" +
+            "Details:\n" +
+            "Name: " + data.name + "\n" +
+            "Institution: " + data.institution + "\n" +
+            "Professional Email: " + data.email + "\n\n" +
+            "Additional Message:\n" +
+            (data.message ? data.message : "No additional comments provided.") + "\n\n" +
+            "Best regards,\n" +
+            data.name
+        );
+
+        // Open the user's mail client
+        window.location.href = "mailto:" + myEmail + "?subject=" + subject + "&body=" + body;
+        
+        // Wait 1 second before closing modal to ensure the redirect triggers
+        setTimeout(() => {
+            toggleModal();
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>

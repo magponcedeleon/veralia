@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veralia | Quantitative Neuroimaging Systems</title>
+    <title>Veralia software</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -31,7 +31,7 @@
             <a href="#analysis" class="hover:text-blue-400 transition">Clinical Analysis</a>
             <a href="#research" class="hover:text-blue-400 transition">Research</a>
         </div>
-        <button onclick="toggleModal()" class="bg-blue-600 text-white px-6 py-2 text-[12px] font-bold uppercase tracking-widest hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
+        <button onclick="toggleModal()" class="bg-blue-600 text-white px-3 py-2 text-[12px] font-bold uppercase tracking-widest hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
             Book Consultation
         </button>
     </div>
@@ -177,16 +177,16 @@
                     </div>
                     
                     <div class="relative h-56 w-full border-b border-slate-800 flex items-end px-4">
-<svg class="w-full h-full" viewBox="0 0 200 100" preserveAspectRatio="none">
-    <path d="M 40 100 Q 80 10 120 100" fill="rgba(71, 85, 105, 0.2)" stroke="#475569" stroke-width="1.5" />
-    
-    <path d="M 80 100 Q 120 10 160 100" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="2" />
-    
-    <path d="M 80 50 L 80 40 L 120 40 L 120 50" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2" />
-    
-    <text x="100" y="35" fill="#ef4444" font-size="6" font-weight="bold" text-anchor="middle" font-family="Inter, sans-serif">P < 0.001</text>
-</svg>
-                    </div>
+    <svg class="w-full h-full" viewBox="0 0 200 100" preserveAspectRatio="xMidYMax meet">
+        <path d="M 40 100 Q 80 10 120 100" fill="rgba(71, 85, 105, 0.2)" stroke="#475569" stroke-width="1.5" />
+        
+        <path d="M 80 100 Q 120 10 160 100" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="2" />
+        
+        <path d="M 80 50 L 80 40 L 120 40 L 120 50" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2" />
+        
+        <text x="100" y="35" fill="#ef4444" font-size="6" font-weight="bold" text-anchor="middle" font-family="Inter, sans-serif">P < 0.001</text>
+    </svg>
+</div>
 
                 </div>
             </div>
@@ -226,10 +226,6 @@
                         <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Institution</label>
                         <input type="text" name="institution" required placeholder="Medical Center" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition">
                     </div>
-                </div>
-                <div>
-                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Professional Email Address</label>
-                    <input type="email" name="email" required placeholder="name@hospital.org" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition">
                 </div>
                 <div>
                     <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Additional Message</label>
@@ -285,8 +281,7 @@
             "I would like to request a clinical briefing regarding the Veralia platform.\n\n" +
             "Details:\n" +
             "Name: " + data.name + "\n" +
-            "Institution: " + data.institution + "\n" +
-            "Professional Email: " + data.email + "\n\n" +
+            "Institution: " + data.institution + "\n\n" +
             "Additional Message:\n" +
             (data.message ? data.message : "No additional comments provided.") + "\n\n" +
             "Best regards,\n" +

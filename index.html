@@ -27,13 +27,8 @@
             <img src="assets/images/icon.png" alt="Veralia Logo" class="h-8 w-8 object-contain brightness-125">
             <span class="text-xl font-extrabold tracking-tighter text-white uppercase">VERALIA</span>
         </div>
-        <div class="hidden md:flex gap-10 text-[12px] font-bold uppercase tracking-[0.2em] text-white">
-            <a href="#technology" class="hover:text-blue-400 transition">Core Technology</a>
-            <a href="#analysis" class="hover:text-blue-400 transition">Clinical Analysis</a>
-            <a href="#research" class="hover:text-blue-400 transition">Research</a>
-        </div>
         <button onclick="toggleModal()" class="bg-blue-600 text-white px-3 py-2 text-[12px] font-bold uppercase tracking-widest hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
-            Book Consultation
+            Contact us
         </button>
     </div>
 </nav>
@@ -42,19 +37,9 @@
     <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-5 gap-12 items-center">
         
         <div class="lg:col-span-2">
-            <h1 class="text-5xl font-extrabold leading-tight text-slate-900 mb-6 tracking-tight">
-                Designed for Clinicians
-            </h1>
-            
-            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
-                Standardize cerebral PET quantification with Veralia. Our engine executes complex processing in the background, delivering validated metrics for every case to support an objective diagnosis.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4">
-                <button onclick="toggleModal()" class="bg-blue-600 text-white px-10 py-4 text-xs font-black uppercase tracking-[0.2em] hover:bg-blue-700 transition shadow-xl shadow-blue-200">
-                    Request Clinical Briefing
-                </button>
-            </div>
+            <h2 class="text-5xl font-extrabold leading-tight text-slate-900 mb-6 tracking-tight">
+              Veralia helps nuclear medicine physicians to diagnose neurological conditions faster and with higher confidence
+            </h2>
         </div>
 
         <div class="lg:col-span-3 relative">
@@ -74,7 +59,6 @@
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
                         <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Interface Overview</span>
                     </div>
-                    <span class="text-[9px] font-bold text-blue-400/80 uppercase tracking-tighter italic">Veralia Clinical v1.1</span>
                 </div>
             </div>
         </div>
@@ -82,118 +66,147 @@
 </header>
 
 
-    <section id="technology" class="py-24 bg-slate-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="grid lg:grid-cols-3 gap-16">
-                <div class="space-y-4">
-                    <div class="h-1 w-12 bg-blue-600"></div>
-                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Clinical Standard</h4>
-                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Eliminate Inter-Observer Variability.</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">
-                        Veralia provides a standardized framework for PET quantification, ensuring that metrics remain consistent regardless of the reading physician.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div class="h-1 w-12 bg-blue-600"></div>
-                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Advanced Analytics</h4>
-                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Validated Normative Comparisons.</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">
-                        By benchmarking individual patient volumes against healthy databases, clinicians can identify statistically significant deviations.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div class="h-1 w-12 bg-blue-600"></div>
-                    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Workflow Optimization</h4>
-                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Automated Processing Pipeline.</h3>
-                    <p class="text-sm text-slate-500 leading-relaxed italic">
-                        From DICOM uploading to metrics generation, Veralia automates technical processing for the clinical team.
-                    </p>
-                </div>
-            </div>
+<section id="Problem" class="py-24 bg-slate-900/95 border-y border-slate-800 flex items-center justify-center">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-3xl md:text-4xl font-bold text-white leading-tight tracking-tight">
+                Brain scans guide life-changing decisions, yet today, up to 
+                <span class="text-blue-500 underline decoration-blue-500/30 underline-offset-8">40% of clinicians</span> 
+                still rely on subjective visual interpretation of the image.
+            </p>
+            <p class="mt-8 text-xl text-white leading-relaxed font-light">
+                Subtle changes—the earliest signs of disease—are often missed by the human eye.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="analysis" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="mb-16">
-                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.3em] mb-4 italic">Benchmarking & Norms</h2>
-                <h3 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight uppercase">Evidence-Based Comparative Analysis</h3>
-                <p class="text-slate-600 leading-relaxed italic max-w-2xl">Identify metabolic deviations from age-matched healthy controls. Veralia provides objective statistical context.</p>
-            </div>
 
-            <div class="grid lg:grid-cols-2 gap-20 items-start">
-                <div class="space-y-6">
-                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 italic text-slate-500 text-xs leading-relaxed">
-                        <span class="text-blue-600 font-bold block mb-1 uppercase tracking-widest text-[9px] non-italic">
-                            <i class="fa-solid fa-circle-info mr-2"></i>Clinical Alert:
-                        </span>
-                        Significant metabolic hypometabolism detected in the <strong>Left Temporal Lobe</strong>.
-                    </div>
-                    <div class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-sm">
-                        <table class="w-full text-left text-[13px] border-collapse">
-                            <thead class="bg-slate-50 border-b border-slate-100 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                                <tr>
-                                    <th class="px-6 py-4">Anatomical Region</th>
-                                    <th class="px-6 py-4 text-blue-600">SUV</th>
-                                    <th class="px-6 py-5">Deviation To Normal</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-slate-600 font-medium">
-                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Frontal Lobe (L)</td><td class="px-6 py-4 font-mono text-blue-600">0.85</td><td class="px-6 py-4 text-xs italic"><span class="text-red-500 font-semibold">-3.4 (Significant)</span></td></tr>
-                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Frontal Lobe (R)</td><td class="px-6 py-4 font-mono text-blue-600">1.12</td><td class="px-6 py-4 text-xs italic"><span class="text-slate-400">0.4 (Normal)</span></td></tr>
-                                <tr class="border-b border-slate-50 transition"><td class="px-6 py-4">Temporal Lobe (L)</td><td class="px-6 py-4 font-mono text-blue-600">0.62</td><td class="px-6 py-4 text-xs italic"><span class="text-slate-400">-1.2 (Normal)</span></td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="bg-slate-900 rounded-[2.5rem] p-10 text-white flex flex-col justify-center min-h-[400px] shadow-2xl">
-                    <h4 class="text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6 italic">Quantification Engine</h4>
-                    <p class="text-xl font-light leading-relaxed mb-8">
-                        "Veralia provides the <span class="text-white font-semibold">objective baseline</span> required to differentiate between normal age-related decline and pathology."
-                    </p>
-                </div>
-            </div>
+
+
+<section id="Benefits" class="py-24 bg-slate-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight uppercase">Veralia Benefits</h2>
         </div>
-    </section>
 
-    <section id="research" class="py-24 bg-medical-dark text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20">
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Identifies Brain Affected Areas</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    By comparing individual patients against healthy databases, clinicians can immediately identify metabolic abnormalities.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Tracks Disease Progression</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    It compares scans taken at different time points to monitor patient evolution.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Physician-Centric Interface</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Designed specifically for clinical workflows, our intuitive interface ensures rapid adoption without technical complexity.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Reduces Time to Diagnosis</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Total diagnostic time is significantly reduced, ensuring patients receive critical treatment interventions faster.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Eliminates Observer Variability</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Standardized quantification ensures that metrics remain consistent regardless of the reading clinician.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">Automates Processing Pipeline</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Manual interventions are removed by integrating directly with hardware, providing immediate results.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="py-24 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            
             <div class="space-y-8">
                 <div>
-                    <h2 class="text-xs font-bold text-blue-400 uppercase tracking-[0.3em] mb-4">Cohort Analytics</h2>
-                    <h3 class="text-4xl font-extrabold tracking-tight uppercase leading-tight">Advanced Research & Academic Support</h3>
+                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight uppercase">Bridging the Gap in Neuroimaging</h2>
+                   </div>
+
+
+                <div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Founded by <strong>Magdalena Ponce de León</strong>, a Clinical Neuroscience PhD candidate at the Medical University of Vienna. Veralia combines high-level technology with a software that fits naturally into a busy clinic. Veralia allows doctors to interpret results and finalize their diagnosis within <strong>minutes</strong>.
+                    </p>
                 </div>
-                <p class="text-slate-400 leading-relaxed italic max-w-lg">Veralia transcends individual diagnostics. Perform voxel-wise group comparisons and longitudinal trajectory modeling.</p>
+
 
             </div>
-            <div class="relative">
-                <div class="absolute -inset-10 bg-blue-500/5 blur-3xl rounded-full"></div>
-                <div class="relative bg-slate-900 p-8 rounded-[2.5rem] border border-slate-800 shadow-2xl">
-                    <div class="flex justify-between items-start mb-10">
-                        <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">Statistical Significance</span>
-                        <div class="flex gap-4">
-                            <span class="text-[8px] text-slate-400 font-bold uppercase"><i class="fa-solid fa-circle text-slate-600 mr-1"></i>Placebo</span>
-                            <span class="text-[8px] text-slate-400 font-bold uppercase"><i class="fa-solid fa-circle text-blue-500 mr-1"></i>Treatment</span>
-                        </div>
-                    </div>
-                    
-                    <div class="relative h-56 w-full border-b border-slate-800 flex items-end px-4">
-    <svg class="w-full h-full" viewBox="0 0 200 100" preserveAspectRatio="xMidYMax meet">
-        <path d="M 40 100 Q 80 10 120 100" fill="rgba(71, 85, 105, 0.2)" stroke="#475569" stroke-width="1.5" />
-        
-        <path d="M 80 100 Q 120 10 160 100" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="2" />
-        
-        <path d="M 80 50 L 80 40 L 120 40 L 120 50" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2" />
-        
-        <text x="100" y="35" fill="#ef4444" font-size="6" font-weight="bold" text-anchor="middle" font-family="Inter, sans-serif">P < 0.001</text>
-    </svg>
-</div>
 
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-100/50 rounded-[3rem] blur-2xl -z-10"></div>
+                <div class="aspect-[4/5] bg-slate-100 rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-2xl flex items-center justify-center group relative">
+                    <img src="assets/images/Magdalena Ponce de León.png" alt="Veralia Founder and Concept" class="w-full h-full object-cover">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+                        <p class="text-xs text-blue-400 font-bold uppercase tracking-widest mb-1">Founder's Vision</p>
+                        <p class="text-sm text-white leading-relaxed italic">
+                            "Veralia is the result of combining clinical neuroimaging research with a deep understanding of physician needs."
+                        </p>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="connect" class="py-24 bg-slate-900/95 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-3xl font-extrabold text-white mb-6 tracking-tight uppercase">Get in touch</h3>
+            <p class="text-white leading-relaxed mb-10 text-lg">
+                Whether you are interested in a clinical evaluation or research collaboration, we are open to discussing how Veralia can integrate into your facility.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.linkedin.com/company/veralia-it/" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#0077b5] text-white px-8 py-4 rounded-xl font-bold uppercase text-[11px] tracking-widest hover:bg-[#005582] transition shadow-lg shadow-blue-500/10">
+                    <i class="fa-brands fa-linkedin text-lg"></i>
+                    Connect on LinkedIn
+                </a>
+                
+                <button onclick="toggleModal()" class="inline-flex items-center justify-center gap-3 bg-white text-slate-900 px-8 py-4 rounded-xl font-bold uppercase text-[11px] tracking-widest hover:bg-slate-200 transition">
+                    <i class="fa-solid fa-envelope text-lg"></i>
+                    Send Inquiry
+                </button>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
+    
     <section class="py-12 bg-slate-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-8 flex flex-col items-center">
             <span class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-10">Institutional Support</span>
@@ -209,8 +222,7 @@
         <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100 animate-in fade-in zoom-in duration-300">
             <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 tracking-tight">Clinical Consultation</h3>
-                    <p class="text-[10px] text-blue-600 uppercase font-black tracking-widest mt-1 italic">Veralia Technical Briefing</p>
+                    <h3 class="text-xl font-bold text-slate-900 tracking-tight">Veralia Consultation</h3>
                 </div>
                 <button onclick="toggleModal()" class="text-slate-400 hover:text-slate-900 transition p-2">
                     <i class="fa-solid fa-xmark text-xl"></i>
@@ -229,20 +241,17 @@
                     </div>
                 </div>
                 <div>
-                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Additional Message</label>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Message</label>
                     <textarea name="message" rows="3" placeholder="How can Veralia support your workflow?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition"></textarea>
                 </div>
                 <button type="submit" class="w-full bg-blue-600 text-white font-black uppercase text-[11px] tracking-[0.2em] py-5 rounded-xl hover:bg-blue-700 transition shadow-xl shadow-blue-200">
-                    Confirm Meeting Request
+                    Send
                 </button>
-                <p class="text-[9px] text-center text-slate-400 uppercase tracking-tighter">
-                    By clicking, your mail client will open to finalize the request.
-                </p>
             </form>
         </div>
     </div>
 
-    <footer class="py-20 border-t border-slate-100 bg-medical-dark text-white">
+    <footer class="py-10 border-t border-slate-100 bg-medical-dark text-white">
         <div class="max-w-7xl mx-auto px-8 text-center space-y-6">
             <p class="text-[10px] text-slate-400 max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.15em] font-medium">
                 VERALIA IS INTENDED FOR RESEARCH AND INTERNAL EVALUATION PURPOSES. IT IS NOT MEDICALLY CERTIFIED FOR PRIMARY DIAGNOSIS. ALL FINDINGS MUST BE REVIEWED BY A BOARD-CERTIFIED NUCLEAR MEDICINE PHYSICIAN.
